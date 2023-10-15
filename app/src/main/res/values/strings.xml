@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ExplorerEZ</string>
+
+    //OnBoarding1
+    <string name="onBoarding1">Bersiaplah Untuk Perjalanan Berikutnya</string>
+    <string name="onBoarding2">Kunjungi Tempat Wisata</string>
+    <string name="onBoarding3">Mari Jelajahi Dunia</string>
+    <string name="onBoarding">Temukan ribuan destinasi wisata yang siap Anda kunjungi</string>
+
 </resources>
