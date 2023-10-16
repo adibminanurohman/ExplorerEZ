@@ -5,17 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class Masuk : AppCompatActivity() {
+class BuatAkun : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_masuk)
+        setContentView(R.layout.activity_buat_akun)
     }
-    fun masukMain(view: View) {
-        val intent = Intent(this, MainActivity::class.java)
+    fun buatAkunMain(view: View) {
+        val intent = Intent(this, Masuk::class.java)
         startActivity(intent)
     }
-    fun masukBuatAkun(view: View) {
-        val intent = Intent(this, BuatAkun::class.java)
+    fun buatAkunMainKembali(view: View) {
+        val intent = Intent(this, Masuk::class.java)
         startActivity(intent)
     }
 }
