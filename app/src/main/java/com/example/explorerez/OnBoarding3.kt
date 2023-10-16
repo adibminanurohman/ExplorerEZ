@@ -11,7 +11,7 @@ class OnBoarding3 : AppCompatActivity() {
         setContentView(R.layout.activity_on_boarding3)
     }
     fun openNextActivity(view: View) {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, Masuk::class.java)
         startActivity(intent)
     }
 }
