@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/beranda_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Beranda"
+        android:icon="@drawable/beranda"/>
+    <item
+        android:id="@+id/favorit_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Favorit"
+        android:icon="@drawable/favorit"/>
+    <item
+        android:id="@+id/peta_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Peta"
+        android:icon="@drawable/peta"/>
+    <item
+        android:id="@+id/profil_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Profil"
+        android:icon="@drawable/profil"/>
+</menu>

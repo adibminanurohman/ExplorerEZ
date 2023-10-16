@@ -6,5 +6,7 @@
     <string name="onBoarding2">Kunjungi Tempat Wisata</string>
     <string name="onBoarding3">Mari Jelajahi Dunia</string>
     <string name="onBoarding">Temukan ribuan destinasi wisata yang siap Anda kunjungi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
