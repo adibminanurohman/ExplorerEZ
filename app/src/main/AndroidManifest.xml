@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ExplorerEZ"
         tools:targetApi="31">
         <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DetailPromoActivity"
+            android:exported="false" />
+        <activity
             android:name=".BuatAkun"
             android:exported="false" />
         <activity
