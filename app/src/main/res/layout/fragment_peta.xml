@@ -18,41 +18,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="318dp"
+        android:layout_height="56dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/rencetangle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:background="@drawable/backgroungsearchstroke"
+        android:drawableEnd="@drawable/search"
+        android:ems="10"
+        android:hint="Cari Destinasi"
+        android:inputType="text"
+        android:paddingHorizontal="20dp"
         app:layout_constraintStart_toEndOf="@+id/imageButton8"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="289dp"
-        android:layout_height="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
-        app:layout_constraintEnd_toEndOf="@+id/imageView11"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
-        app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <LinearLayout
         android:layout_width="434dp"
         android:layout_height="799dp"
         android:orientation="vertical"
-        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView">
+        app:layout_constraintTop_toBottomOf="@+id/editTextText">
 
         <ImageView
             android:id="@+id/imageView13"
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="822dp"
+            android:layout_marginTop="10dp"
             android:scaleType="centerCrop"
             android:src="@drawable/fotopeta" />
     </LinearLayout>
