@@ -1,14 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FavoritFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+<!--    Header daftar keinginan-->
+    <LinearLayout
+        android:id="@+id/linearLayoutFavorit1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar Keinginan"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageButton13"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/panahkiri"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+<!--    gunung bromo-->
+    <LinearLayout
+        android:id="@+id/LinearLayoutFavorit2"
+        android:layout_width="403dp"
+        android:layout_height="218dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutFavorit1">
+
+        <ImageView
+            android:id="@+id/imgBatasCard1"
+            android:layout_width="360dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:src="@drawable/batascard" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgFavoritBromo"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/gunungbromo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.486" />
+
+                <TextView
+                    android:id="@+id/txJudulFavoritBromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Gunung Bromo"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imgFavoritBromo"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TxDeskripsiFavoritBromo"
+                    android:layout_width="181dp"
+                    android:layout_height="144dp"
+                    android:text="Gunung Bromo merupakan salah satu gunung dari lima gunung yang terdapat di komplek Pegunungan Tengger di laut pasir."
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/txJudulFavoritBromo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txJudulFavoritBromo"
+                    app:layout_constraintTop_toBottomOf="@+id/txJudulFavoritBromo"
+                    app:layout_constraintVertical_bias="0.202" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!--    Candi Borobudur-->
+    <LinearLayout
+        android:id="@+id/LinearLayoutFavorit3"
+        android:layout_width="403dp"
+        android:layout_height="218dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayoutFavorit2">
+
+        <ImageView
+            android:id="@+id/imgBatasCard2"
+            android:layout_width="360dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:src="@drawable/batascard" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgFavoritCandiBorobudur"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/candiborobudur"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.486" />
+
+                <TextView
+                    android:id="@+id/txJudulFavoritCandiBorobudur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Candi Borobudur"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imgFavoritCandiBorobudur"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TxDeskripsiFavoritCandiBorobudur"
+                    android:layout_width="181dp"
+                    android:layout_height="144dp"
+                    android:text="Candi Borobudur merupakan bukti keberagaman budaya Indonesia yang kaya. Arsitektur candi ini mencerminkan penggabungan unsur-unsur Hindu, Buddha, dan Jawa kuno. Candi ini juga menjadi tujuan ziarah bagi umat Buddha, serta menjadi daya tarik wisata yang populer di Indonesia."
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/txJudulFavoritCandiBorobudur"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txJudulFavoritCandiBorobudur"
+                    app:layout_constraintTop_toBottomOf="@+id/txJudulFavoritCandiBorobudur"
+                    app:layout_constraintVertical_bias="0.202" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!--    Gunung Rinjani-->
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="218dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayoutFavorit3">
+
+        <ImageView
+            android:id="@+id/imgBatasCard3"
+            android:layout_width="360dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:src="@drawable/batascard" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgFavoritGunungRinjani"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/gunungrinjani"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.486" />
+
+                <TextView
+                    android:id="@+id/txJudulFavoritGunungRinjani"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Gunung Rinjani"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imgFavoritGunungRinjani"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TxDeskripsiFavoritGunungRinjani"
+                    android:layout_width="181dp"
+                    android:layout_height="144dp"
+                    android:text="Gunung Rinjani merupakan gunung berapi tertinggi kedua di Indonesia dan juga merupakan rangkaian “Lingkaran Api”."
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/txJudulFavoritGunungRinjani"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/txJudulFavoritGunungRinjani"
+                    app:layout_constraintTop_toBottomOf="@+id/txJudulFavoritGunungRinjani"
+                    app:layout_constraintVertical_bias="0.202" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
