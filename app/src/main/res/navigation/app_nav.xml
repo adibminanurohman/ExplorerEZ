@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/berandaFragment">
+
+    <fragment
+        android:id="@+id/berandaFragment"
+        android:name="com.example.explorerez.BerandaFragment"
+        android:label="fragment_beranda"
+        tools:layout="@layout/fragment_beranda" >
+        <action
+            android:id="@+id/action_berandaFragment_to_detailBromoFragment"
+            app:destination="@id/detailBromoFragment" />
+        <action
+            android:id="@+id/action_berandaFragment_to_favoritFragment"
+            app:destination="@id/favoritFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailBromoFragment"
+        android:name="com.example.explorerez.DetailBromoFragment"
+        android:label="fragment_detail_bromo"
+        tools:layout="@layout/fragment_detail_bromo" >
+        <action
+            android:id="@+id/action_detailBromoFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritFragment"
+        android:name="com.example.explorerez.FavoritFragment"
+        android:label="fragment_favorit"
+        tools:layout="@layout/fragment_favorit" >
+        <action
+            android:id="@+id/action_favoritFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment" />
+    </fragment>
+</navigation>
